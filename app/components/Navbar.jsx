@@ -29,9 +29,9 @@ const Navbar = () => {
                 <ul className='hidden md:flex items-center gap-6 lag:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50'>
                     <li><a className='font-Ovo' href="#top">Home</a></li>
                     <li><a className='font-Ovo' href="#about">About Me</a></li>
+                    <li><a className='font-Ovo' href="#skills">Skills</a></li>
                     <li><a className='font-Ovo' href="#top">Experience</a></li>
                     <li><a className='font-Ovo' href="#top">Education</a></li>
-                    <li><a className='font-Ovo' href="#top">Skills</a></li>
                     <li><a className='font-Ovo' href="#top">Services</a></li>
                     <li><a className='font-Ovo' href="#top">My Work</a></li>
                     <li><a className='font-Ovo' href="#top">Contact Me</a></li>
@@ -58,9 +58,9 @@ const Navbar = () => {
 
                     <li><a className='font-Ovo' onClick={closeMenu} href="#top">Home</a></li>
                     <li><a className='font-Ovo' onClick={closeMenu} href="#about">About Me</a></li>
+                    <li><a className='font-Ovo' onClick={closeMenu} href="#skills">Skills</a></li>
                     <li><a className='font-Ovo' onClick={closeMenu} href="#top">Experience</a></li>
                     <li><a className='font-Ovo' onClick={closeMenu} href="#top">Education</a></li>
-                    <li><a className='font-Ovo' onClick={closeMenu} href="#top">Skills</a></li>
                     <li><a className='font-Ovo' onClick={closeMenu} href="#top">Services</a></li>
                     <li><a className='font-Ovo' onClick={closeMenu} href="#top">My Work</a></li>
                     <li><a className='font-Ovo' onClick={closeMenu} href="#top">Contact Me</a></li>
