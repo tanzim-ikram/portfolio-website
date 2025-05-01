@@ -16,7 +16,7 @@ const skills = [
     { name: "MySQL", icon: "/icons/MySQL.svg" },
     { name: "XML", icon: "/icons/XML.svg" },
     { name: "JSON", icon: "/icons/JSON.svg" },
-    { name: "Tailwindcss", icon: "/icons/Next.js.svg" },
+    { name: "Tailwind CSS", icon: "/icons/Tailwind CSS.svg" },
     { name: "Bootstrap", icon: "/icons/Bootstrap.svg" },
     { name: "Python", icon: "/icons/Python.svg" },
     { name: "Flask", icon: "/icons/Flask.svg" },
@@ -24,7 +24,6 @@ const skills = [
     { name: "Matplotlib", icon: "/icons/Matplotlib.svg" },
     { name: "NumPy", icon: "/icons/NumPy.svg" },
     { name: "Anaconda", icon: "/icons/Anaconda.svg" },
-    { name: "Bootstrap", icon: "/icons/Bootstrap.svg" },
     { name: "NPM", icon: "/icons/NPM.svg" },
     { name: "VS Code", icon: "/icons/VS Code.svg" },
     { name: "Postman", icon: "/icons/Postman.svg" },
@@ -33,17 +32,16 @@ const skills = [
     { name: "Arduino", icon: "/icons/Arduino.svg" },
     { name: "C", icon: "/icons/C.svg" },
     { name: "C++", icon: "/icons/CPP.svg" },
-    { name: "Embedded C", icon: "/icons/Embedded C.svg" },
     { name: "WordPress", icon: "/icons/WordPress.svg" },
     { name: "WooCommerce", icon: "/icons/WooCommerce.svg" }
 ];
 
 const Skills = () => {
     return (
-        <div id="skills" className="py-20 px-4 text-center bg-white">
+        <div id="skills" className="py-20 px-4 mb-10 text-center bg-white">
             <div className="max-w-5xl mx-auto">
                 <h4 className="text-center mb-2 text-lg font-Ovo">Skills</h4>
-                <h2 className="text-center mb-2 text-5xl font-Ovo">Tools I Use</h2>
+                <h2 className="text-center mb-4 text-5xl font-Ovo">Tools I Use</h2>
                 <p className="font-Ovo text-gray-500 mb-10">
                     The skills, tools and technologies I am really good at
                 </p>
