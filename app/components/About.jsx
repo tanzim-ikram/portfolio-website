@@ -24,12 +24,12 @@ function About() {
                     <h4 className="text-left mb-4 text-lg font-Ovo font-bold">Follow me: </h4>
 
                     <div className='flex flex-row lg:flex-row items-center gap-4 mb-10'>
-                        <a href=""><FaLinkedin size={32} className='hover:-translate-y-1 duration-300 hover:text-neutral-700' /></a>
-                        <a href=""><FaGithubSquare size={32} className='hover:-translate-y-1 duration-300 hover:text-neutral-700' /></a>
-                        <a href=""><FaSquareXTwitter size={32} className='hover:-translate-y-1 duration-300 hover:text-neutral-700' /></a>
-                        <a href=""><FaFacebookSquare size={32} className='hover:-translate-y-1 duration-300 hover:text-neutral-700' /></a>
-                        <a href=""><FaInstagramSquare size={32} className='hover:-translate-y-1 duration-300 hover:text-neutral-700' /></a>
-                        <a href=""><FaYoutubeSquare size={32} className='hover:-translate-y-1 duration-300 hover:text-neutral-700' /></a>
+                        <a href=""><FaLinkedin size={32} className='hover:scale-[1.2] duration-100 hover:text-neutral-700' /></a>
+                        <a href=""><FaGithubSquare size={32} className='hover:scale-[1.2] duration-100 hover:text-neutral-700' /></a>
+                        <a href=""><FaSquareXTwitter size={32} className='hover:scale-[1.2] duration-100 hover:text-neutral-700' /></a>
+                        <a href=""><FaFacebookSquare size={32} className='hover:scale-[1.2] duration-100 hover:text-neutral-700' /></a>
+                        <a href=""><FaInstagramSquare size={32} className='hover:scale-[1.2] duration-100 hover:text-neutral-700' /></a>
+                        <a href=""><FaYoutubeSquare size={32} className='hover:scale-[1.2] duration-100 hover:text-neutral-700' /></a>
                     </div>
 
                     <div className="flex sm:flex-row items-left mt-6">
