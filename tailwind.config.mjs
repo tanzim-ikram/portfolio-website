@@ -20,7 +20,10 @@ export default {
             boxShadow: {
                 'black': '4px 4px 0 #000',
                 'white': '4px 4px 0 #fff'
-            }
+            },
+            backdropBlur: {
+                md: '12px',
+            },
         },
     },
     plugins: [],
