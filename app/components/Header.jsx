@@ -7,11 +7,11 @@ function Header() {
     <div className="w-full min-h-screen flex items-center justify-center px-4">
       <div className="w-full max-w-3xl text-center flex flex-col items-center justify-center gap-6 mt-20">
         <Image
-          src={assets.profile_img}
+          src="/tanzim.jpg"
           alt="Profile"
           className="rounded-full"
-          width={128}
-          height={128}
+          width={150}
+          height={150}
         />
 
         <h3 className="flex items-center justify-center gap-2 text-xl md:text-2xl font-Ovo">

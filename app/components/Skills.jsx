@@ -1,7 +1,5 @@
 import React from "react";
 import Image from "next/image";
-// import { "/icons/Next.js.svg" from "@/"/icons/Next.js.svg"
-// import { html } from "../../public/icons/HTML5.svg";
 
 const skills = [
     { name: "HTML", icon: "/icons/HTML5.svg" },
