@@ -24,6 +24,9 @@ export default {
             backdropBlur: {
                 md: '12px',
             },
+            gridTemplateColumns: {
+                'auto': 'repeat(auto-fit, minmax(200px, 1fr))',
+            },
         },
     },
     plugins: [],

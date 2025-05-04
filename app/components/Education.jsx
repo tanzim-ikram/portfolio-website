@@ -51,13 +51,13 @@ const Education = () => {
                   <div className="absolute left-1/2 -translate-x-1/2 w-6 h-6 rounded-full bg-black border-4 border-white z-10 top-2" />
 
                   {/* Left side (if isLeft), empty on even */}
-                  <div className="hidden md:block md:w-1/2 px-4">
+                  <div className="hidden md:block md:w-1/2 px-4 ">
                     {isLeft && (
-                      <div className="md:pr-10 text-right">
+                      <div className="md:pr-10 text-right ">
                         <span className="text-lg font-semibold font-Ovo text-gray-900 block mt-2 mb-4">
                           {edu.year}
                         </span>
-                        <div className="bg-white border border-gray-300 rounded-md p-4 shadow-sm transition-transform transform hover:scale-[1.02] hover:shadow-md">
+                        <div className="bg-white border border-gray-400 rounded-md p-4 shadow-sm transition-transform transform hover:scale-[1.02] hover:shadow-md cursor-pointer hover:bg-pink-50 duration-500 ease-in-out">
                           <h3 className="font-Ovo text-base font-semibold">{edu.title}</h3>
                           <p className="text-base font-Ovo text-gray-700">Department: {edu.department}</p>
                           <p className="text-base font-Ovo text-gray-700">{edu.institute}</p>
@@ -76,7 +76,7 @@ const Education = () => {
                         <span className="text-lg font-semibold font-Ovo text-gray-900 block mt-2 mb-4">
                           {edu.year}
                         </span>
-                        <div className="bg-white border border-gray-300 rounded-md p-4 shadow-sm transition-transform transform hover:scale-[1.02] hover:shadow-md">
+                        <div className="bg-white border border-gray-300 rounded-md p-4 shadow-sm transition-transform transform hover:scale-[1.02] hover:shadow-md cursor-pointer hover:bg-pink-50 duration-500 ease-in-out">
                           <h3 className="font-Ovo text-base font-semibold">{edu.title}</h3>
                           <p className="text-base font-Ovo text-gray-700">{edu.institute}</p>
                           <p className="text-base font-Ovo text-gray-700">Department: {edu.department}</p>

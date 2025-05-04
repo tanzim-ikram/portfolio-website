@@ -45,7 +45,7 @@ const Experience = () => {
           {experiences.map((exp, index) => (
             <div
               key={index}
-              className="bg-white border border-gray-200 rounded-xl shadow-sm p-6 space-y-2"
+              className="bg-white border border-gray-400 rounded-xl shadow-sm p-6 space-y-2 hover:shadow-md cursor-pointer hover:bg-pink-50 hover:scale-[1.02] duration-500 ease-in-out"
             >
               {/* Row 1: Logo + Title + Duration */}
               <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-3">
