@@ -76,7 +76,7 @@ const Education = () => {
                         <span className="text-lg font-semibold font-Ovo text-gray-900 block mt-2 mb-4">
                           {edu.year}
                         </span>
-                        <div className="bg-white border border-gray-300 rounded-md p-4 shadow-sm transition-transform transform hover:scale-[1.02] hover:shadow-md cursor-pointer hover:bg-pink-50 duration-500 ease-in-out">
+                        <div className="bg-white border border-gray-300 rounded-md p-4 shadow-sm transition-transform transform hover:scale-[1.02] hover:shadow-md">
                           <h3 className="font-Ovo text-base font-semibold">{edu.title}</h3>
                           <p className="text-base font-Ovo text-gray-700">{edu.institute}</p>
                           <p className="text-base font-Ovo text-gray-700">Department: {edu.department}</p>
