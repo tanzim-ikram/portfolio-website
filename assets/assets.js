@@ -30,6 +30,8 @@ import right_arrow from './right-arrow.png';
 import send_icon from './send-icon.png';
 // import right_arrow_bold from './right-arrow-bold.png';
 // import right_arrow_bold_dark from './right-arrow-bold-dark.png';
+import AERDIcon from "../public/company/AERD.jpg";
+import TechTopiaIcon from "../public/company/TechTopia.png";
 
 export const assets = {
     user_image,
@@ -64,6 +66,8 @@ export const assets = {
     send_icon,
     // right_arrow_bold,
     // right_arrow_bold_dark
+    AERDIcon,
+    TechTopiaIcon
 };
 
 export const LinkedIn = 'https://www.linkedin.com/in/tanzim-ikram-sheikh/'
@@ -72,6 +76,92 @@ export const X = 'https://x.com/tanzim_ikram'
 export const Facebook = 'https://www.facebook.com/TanzimIkramSheikh'
 export const Instagram = 'https://www.instagram.com/10_zim'
 export const YouTube = 'https://www.youtube.com/@techwithtanzim'
+
+export const skills = [
+    { name: "HTML", icon: "/icons/HTML5.svg" },
+    { name: "CSS", icon: "/icons/CSS3.svg" },
+    { name: "Javascript", icon: "/icons/JavaScript.svg" },
+    { name: "Typescript", icon: "/icons/TypeScript.svg" },
+    { name: "React", icon: "/icons/React.svg" },
+    { name: "Figma", icon: "/icons/Figma.svg" },
+    { name: "Next.js", icon: "/icons/Next.js.svg" },
+    { name: "Node.js", icon: "/icons/Node.js.svg" },
+    { name: "Nest.js", icon: "/icons/Nest.js.svg" },
+    { name: "PostgreSQL", icon: "/icons/PostgresSQL.svg" },
+    { name: "PHP", icon: "/icons/PHP.svg" },
+    { name: "MySQL", icon: "/icons/MySQL.svg" },
+    { name: "XML", icon: "/icons/XML.svg" },
+    { name: "JSON", icon: "/icons/JSON.svg" },
+    { name: "Tailwind CSS", icon: "/icons/Tailwind CSS.svg" },
+    { name: "Bootstrap", icon: "/icons/Bootstrap.svg" },
+    { name: "Python", icon: "/icons/Python.svg" },
+    { name: "Flask", icon: "/icons/Flask.svg" },
+    { name: "Pandas", icon: "/icons/Pandas.svg" },
+    { name: "Matplotlib", icon: "/icons/Matplotlib.svg" },
+    { name: "NumPy", icon: "/icons/NumPy.svg" },
+    { name: "Anaconda", icon: "/icons/Anaconda.svg" },
+    { name: "NPM", icon: "/icons/NPM.svg" },
+    { name: "VS Code", icon: "/icons/VS Code.svg" },
+    { name: "Postman", icon: "/icons/Postman.svg" },
+    { name: "GitHub", icon: "/icons/GitHub.svg" },
+    { name: "Git", icon: "/icons/Git.svg" },
+    { name: "Arduino", icon: "/icons/Arduino.svg" },
+    { name: "C", icon: "/icons/C.svg" },
+    { name: "C++", icon: "/icons/CPP.svg" },
+    { name: "WordPress", icon: "/icons/WordPress.svg" },
+    { name: "WooCommerce", icon: "/icons/WooCommerce.svg" }
+]
+
+export const experiences = [
+    {
+        company: "Google",
+        role: "Lead Software Engineer",
+        duration: "Nov 2019 - Present",
+        description:
+            "As a Senior Software Engineer at Google, I played a pivotal role in developing innovative solutions for Google's core search algorithms. Collaborating with a dynamic team of engineers, I contributed to the enhancement of search accuracy and efficiency, optimizing user experiences for millions of users worldwide.",
+        icon: AERDIcon,
+    },
+    {
+        company: "Youtube",
+        role: "Software Engineer",
+        duration: "Jan 2017 - Oct 2019",
+        description:
+            "At Youtube, I served as a Software Engineer, focusing on the design and implementation of backend systems for the social media giant's dynamic platform. Working on projects that involved large-scale data processing and user engagement features, I leveraged my expertise to ensure seamless functionality and scalability.",
+        icon: AERDIcon,
+    },
+    {
+        company: "Apple",
+        role: "Junior Software Engineer",
+        duration: "Jan 2016 - Dec 2017",
+        description:
+            "During my tenure at Apple, I held the role of Software Architect, where I played a key role in shaping the architecture of mission-critical software projects. Responsible for designing scalable and efficient systems, I provided technical leadership to a cross-functional team.",
+        icon: TechTopiaIcon,
+    },
+]
+
+export const educations = [
+    {
+      year: "2016 - 2017",
+      title: "Secondary School Certificate (SSC)",
+      institute: "Rani Bilasmoni Govt. Boys' High School",
+      department: "Science",
+      gpa: "5.00",
+    },
+    {
+      year: "2018 - 2019",
+      title: "Higher Secondary School Certificate (HSC)",
+      institute: "Gazipur Cantonment College",
+      department: "Science",
+      gpa: "5.00",
+    },
+    {
+      year: "2021 - Present",
+      title: "Bachelor of Science (BSc)",
+      institute: "American International University-Bangladesh",
+      department: "Computer Science and Engineering",
+      gpa: "3.84",
+    },
+  ]
 
 export const workData = [
     {

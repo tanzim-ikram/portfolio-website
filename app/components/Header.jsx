@@ -20,11 +20,12 @@ function Header() {
         </h3>
 
         <h1 className="text-3xl sm:text-6xl lg:text-[66px] font-Ovo leading-tight">
-        Web Developer & UI/UX Designer
+          Web Developer & UI/UX Designer
         </h1>
 
         <p className="max-w-2xl mx-auto font-Ovo">
-          Creating innovative and efficient digital solutions with a focus on front-end development and user experience.
+          Creating innovative and efficient digital solutions with a focus on
+          front-end development and user experience.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center gap-4 mt-6">
@@ -33,7 +34,12 @@ function Header() {
             className="px-10 py-3 border rounded-full border-white bg-black text-white flex items-center gap-2"
           >
             contact me
-            <Image src={assets.right_arrow_white} alt="" width={16} height={16} />
+            <Image
+              src={assets.right_arrow_white}
+              alt=""
+              width={16}
+              height={16}
+            />
           </a>
           <a
             href="/RESUME - TANZIM IKRAM SHEIKH.pdf"
