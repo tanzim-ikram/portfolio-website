@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 function Services() {
   return (
-    <div id='services' className='w-full px-4 md:px-[12%] py-10 mb-10 scroll-mt-20'>
+    <div id='services' className='w-full px-[12%] py-20 scroll-mt-20'>
       <h4 className="text-center mb-2 text-lg font-Ovo">What I offer</h4>
       <h2 className="text-center mb-4 text-4xl md:text-5xl font-Ovo">My Services</h2>
       <p className="font-Ovo text-gray-500 mb-10 text-center max-w-2xl mx-auto">

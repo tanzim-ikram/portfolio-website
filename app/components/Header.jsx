@@ -4,7 +4,7 @@ import React from "react";
 
 function Header() {
   return (
-    <div className="w-full min-h-screen flex items-center justify-center px-4">
+    <div className="w-full min-h-screen flex items-center justify-center px-[12%] mb-10">
       <div className="w-full max-w-3xl text-center flex flex-col items-center justify-center gap-6 mt-20">
         <Image
           src="/tanzim.jpg"

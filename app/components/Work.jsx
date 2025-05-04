@@ -33,7 +33,7 @@ const workData = [
 
 const Work = () => {
   return (
-    <section id="work" className="py-20 px-4 text-center bg-white">
+    <section id="work" className="py-20 mb-10 text-center bg-white px-[12%]">
       <div className="max-w-6xl mx-auto">
         <h4 className="text-lg mb-2 font-Ovo">My portfolio</h4>
         <h2 className="text-4xl md:text-5xl font-Ovo mb-4">My latest work</h2>

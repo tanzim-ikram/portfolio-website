@@ -33,7 +33,7 @@ const experiences = [
 
 const Experience = () => {
   return (
-    <section id="experience" className="py-20 px-4 bg-white text-center">
+    <section id="experience" className="py-20 px-[12%] bg-white text-center">
       <div className="max-w-4xl mx-auto">
         <h4 className="text-lg mb-2 font-Ovo">Experience</h4>
         <h2 className="text-4xl font-Ovo mb-4">My Experience</h2>
