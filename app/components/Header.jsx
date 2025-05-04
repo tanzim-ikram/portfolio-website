@@ -7,7 +7,7 @@ function Header() {
     <div className="w-full min-h-screen flex items-center justify-center px-[12%] mb-10">
       <div className="w-full max-w-3xl text-center flex flex-col items-center justify-center gap-6 mt-20">
         <Image
-          src="/tanzim.jpg"
+          src={assets.profile_img}
           alt="Profile"
           className="rounded-full"
           width={150}
@@ -20,11 +20,11 @@ function Header() {
         </h3>
 
         <h1 className="text-3xl sm:text-6xl lg:text-[66px] font-Ovo leading-tight">
-          Frontend-Focused UI/UX Designer
+        Web Developer & UI/UX Designer
         </h1>
 
         <p className="max-w-2xl mx-auto font-Ovo">
-          I am a frontend developer from California, USA with 10 years of experience in multiple companies like Microsoft, Tesla and Apple.
+          Creating innovative and efficient digital solutions with a focus on front-end development and user experience.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center gap-4 mt-6">
@@ -36,7 +36,7 @@ function Header() {
             <Image src={assets.right_arrow_white} alt="" width={16} height={16} />
           </a>
           <a
-            href="/sample-resume.pdf"
+            href="/RESUME - TANZIM IKRAM SHEIKH.pdf"
             download
             className="px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2"
           >

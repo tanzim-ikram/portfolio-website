@@ -1,4 +1,4 @@
-import { assets } from '@/assets/assets'
+import { assets, LinkedIn, GitHub, X, Facebook, Instagram, YouTube } from '@/assets/assets'
 import Image from 'next/image';
 import React from 'react';
 import { FaLinkedin, FaGithubSquare, FaFacebookSquare, FaInstagramSquare, FaYoutubeSquare } from "react-icons/fa";
@@ -24,12 +24,24 @@ function About() {
                     <h4 className="text-left mb-4 text-lg font-Ovo font-bold">Follow me: </h4>
 
                     <div className='flex flex-row lg:flex-row items-center gap-4 mb-10'>
-                        <a href=""><FaLinkedin size={32} className='hover:scale-[1.2] duration-100 hover:text-neutral-700' /></a>
-                        <a href=""><FaGithubSquare size={32} className='hover:scale-[1.2] duration-100 hover:text-neutral-700' /></a>
-                        <a href=""><FaSquareXTwitter size={32} className='hover:scale-[1.2] duration-100 hover:text-neutral-700' /></a>
-                        <a href=""><FaFacebookSquare size={32} className='hover:scale-[1.2] duration-100 hover:text-neutral-700' /></a>
-                        <a href=""><FaInstagramSquare size={32} className='hover:scale-[1.2] duration-100 hover:text-neutral-700' /></a>
-                        <a href=""><FaYoutubeSquare size={32} className='hover:scale-[1.2] duration-100 hover:text-neutral-700' /></a>
+                        <a href={LinkedIn} target='_blank'>
+                            <FaLinkedin size={32} className='hover:scale-[1.2] duration-100 hover:text-neutral-700' />
+                        </a>
+                        <a href={GitHub} target='_blank'>
+                            <FaGithubSquare size={32} className='hover:scale-[1.2] duration-100 hover:text-neutral-700' />
+                        </a>
+                        <a href={X} target='_blank'>
+                            <FaSquareXTwitter size={32} className='hover:scale-[1.2] duration-100 hover:text-neutral-700' />
+                        </a>
+                        <a href={Facebook} target='_blank'>
+                            <FaFacebookSquare size={32} className='hover:scale-[1.2] duration-100 hover:text-neutral-700' />
+                        </a>
+                        <a href={Instagram} target='_blank'>
+                            <FaInstagramSquare size={32} className='hover:scale-[1.2] duration-100 hover:text-neutral-700' />
+                        </a>
+                        <a href={YouTube} target='_blank'>
+                            <FaYoutubeSquare size={32} className='hover:scale-[1.2] duration-100 hover:text-neutral-700' />
+                        </a>
                     </div>
 
                     <div className="flex sm:flex-row items-left mt-6">
