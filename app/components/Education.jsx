@@ -10,7 +10,7 @@ const Education = () => {
       <div className="max-w-4xl mx-auto">
         <h4 className="text-lg font-Ovo mb-2">Education</h4>
         <h2 className="text-4xl font-Ovo mb-4">My Education</h2>
-        <p className="font-Ovo text-gray-500 mb-10">
+        <p className="font-Ovo text-gray-600 mb-10">
           Here is a quick summary of my educational background
         </p>
 
@@ -65,7 +65,7 @@ const Education = () => {
                         <span className="text-lg font-semibold font-Ovo text-gray-900 block mt-2 mb-4">
                           {edu.year}
                         </span>
-                        <div className="bg-white border border-gray-400 rounded-md p-4 shadow-sm transition-transform transform hover:scale-[1.02] hover:shadow-md cursor-pointer hover:bg-pink-50 duration-500 ease-in-out">
+                        <div className="bg-white border border-gray-400 rounded-md p-4 shadow-sm transition-transform transform hover:scale-[1.02] hover:shadow-md cursor-pointer hover:bg-rose-50 duration-500 ease-in-out">
                           <h3 className="font-Ovo text-base font-semibold">
                             {edu.title}
                           </h3>
@@ -92,7 +92,7 @@ const Education = () => {
                         <span className="text-lg font-semibold font-Ovo text-gray-900 block mt-2 mb-4">
                           {edu.year}
                         </span>
-                        <div className="bg-white border border-gray-300 rounded-md p-4 shadow-sm transition-transform transform hover:scale-[1.02] hover:shadow-md hover:bg-pink-50 duration-500 ease-in-out">
+                        <div className="bg-white border border-gray-300 rounded-md p-4 shadow-sm transition-transform transform hover:scale-[1.02] hover:shadow-md hover:bg-rose-50 duration-500 ease-in-out">
                           <h3 className="font-Ovo text-base font-semibold">
                             {edu.title}
                           </h3>

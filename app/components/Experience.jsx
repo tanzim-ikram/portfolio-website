@@ -8,7 +8,7 @@ const Experience = () => {
       <div className="max-w-4xl mx-auto">
         <h4 className="text-lg mb-2 font-Ovo">Experience</h4>
         <h2 className="text-4xl font-Ovo mb-4">My Experience</h2>
-        <p className="font-Ovo text-gray-500 mb-10">
+        <p className="font-Ovo text-gray-600 mb-10">
           Here is a quick summary of my most recent experiences
         </p>
 
@@ -16,7 +16,7 @@ const Experience = () => {
           {experiences.map((exp, index) => (
             <div
               key={index}
-              className="bg-white border border-gray-400 rounded-xl shadow-sm p-6 space-y-2 hover:shadow-md cursor-pointer hover:bg-pink-50 hover:scale-[1.02] duration-500 ease-in-out"
+              className="bg-white border border-gray-400 rounded-xl shadow-sm p-6 space-y-2 hover:shadow-md cursor-pointer hover:bg-rose-50 hover:scale-[1.02] duration-500 ease-in-out"
             >
               {/* Row 1: Logo + Title + Duration */}
               <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-3">

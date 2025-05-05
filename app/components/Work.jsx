@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
-import { assets } from '@/assets/assets';
 import { IoIosArrowRoundForward } from 'react-icons/io';
+import { MdOutlineArrowOutward } from "react-icons/md";
 
 const workData = [
   {
@@ -37,7 +37,7 @@ const Work = () => {
       <div className="max-w-6xl mx-auto">
         <h4 className="text-lg mb-2 font-Ovo">My portfolio</h4>
         <h2 className="text-4xl md:text-5xl font-Ovo mb-4">My latest work</h2>
-        <p className="font-Ovo text-gray-500 max-w-2xl mx-auto mb-12">
+        <p className="font-Ovo text-gray-600 max-w-2xl mx-auto mb-12">
           Welcome to my web development portfolio! Explore a collection of projects showcasing
           my expertise in front-end development.
         </p>
@@ -47,7 +47,7 @@ const Work = () => {
           {workData.map((item, index) => (
             <div
               key={index}
-              className="w-full sm:w-[280px] md:w-[240px] lg:w-[220px] xl:w-[250px] rounded-xl overflow-hidden shadow-sm relative group hover:shadow-md cursor-pointer duration-500 ease-in-out hover:scale-[1.02]"
+              className="w-full sm:w-[280px] md:w-[240px] lg:w-[220px] xl:w-[250px] rounded-xl overflow-hidden shadow-sm relative group hover:shadow-md cursor-pointer duration-300 ease-in-out hover:scale-[1.02]"
             >
               <Image
                 src={item.image}
@@ -62,8 +62,8 @@ const Work = () => {
                   <h3 className="text-sm font-semibold font-Ovo text-gray-800">{item.title}</h3>
                   <p className="text-xs text-gray-500 font-Ovo">{item.subtitle}</p>
                 </div>
-                <div className="w-6 h-6 rounded-full bg-lime-300 flex items-center justify-center hover:rotate-45 transition duration-300">
-                  <Image src={assets.arrow_icon} alt="arrow" width={10} height={10} />
+                <div className="w-6 h-6 rounded-full bg-rose-500 flex items-center justify-center hover:rotate-45 transition duration-300"> 
+                  <MdOutlineArrowOutward className='text-white'/>
                 </div>
               </div>
             </div>
@@ -72,7 +72,7 @@ const Work = () => {
 
         {/* Show more button */}
         <div className="mt-12">
-          <button className="text-lg px-10 py-3 rounded-full border border-gray-400 font-Ovo text-gray-400 hover:bg-lime-300 hover:text-gray-800 hover:border-gray-800 flex items-center gap-2 mx-auto">
+          <button className="text-lg px-10 py-3 rounded-full border border-gray-400 font-Ovo text-gray-400 hover:bg-rose-500 hover:text-white hover:border-rose-500 flex items-center gap-2 mx-auto">
             Show more
             <IoIosArrowRoundForward size={24} />
           </button>

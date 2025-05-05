@@ -159,7 +159,7 @@ export const educations = [
       title: "Bachelor of Science (BSc)",
       institute: "American International University-Bangladesh",
       department: "Computer Science and Engineering",
-      gpa: "3.84",
+      gpa: "CGPA: 3.84",
     },
   ]
 

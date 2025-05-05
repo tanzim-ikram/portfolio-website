@@ -9,7 +9,7 @@ function Services() {
       <h2 className="text-center mb-4 text-4xl md:text-5xl font-Ovo">
         My Services
       </h2>
-      <p className="font-Ovo text-gray-500 mb-10 text-center max-w-2xl mx-auto">
+      <p className="font-Ovo text-gray-600 mb-10 text-center max-w-2xl mx-auto">
         Building intuitive, high-performance web solutions with a focus on
         seamless user experience and cutting-edge technologies.
       </p>
@@ -19,7 +19,7 @@ function Services() {
         {serviceData.map(({ icon, title, description, link }, index) => (
           <div
             key={index}
-            className="border border-gray-300 rounded-lg shadow-sm px-8 py-12 bg-white hover:shadow-md hover:bg-pink-50 hover:-translate-y-1 transition-all duration-300 ease-in-out flex flex-col items-center text-center"
+            className="border border-gray-300 rounded-lg shadow-sm px-8 py-12 bg-white hover:shadow-md hover:bg-rose-50 hover:-translate-y-1 transition-all duration-300 ease-in-out flex flex-col items-center text-center"
           >
             <Image
               src={icon}

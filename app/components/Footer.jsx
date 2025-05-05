@@ -15,28 +15,28 @@ const Footer = () => {
                 {/* Email */}
                 <div className="flex flex-col items-center gap-2 text-lg text-gray-600">
                     <div className="flex flex-row items-center gap-2 mb-2">
-                        <MdEmail className='text-rose-600' />
+                        <MdEmail className='text-rose-500' />
                         <a href="mailto:tanzim.ikram@gmail.com" className="hover:underline">greatstackdev@gmail.com</a>
                     </div>
 
                     <div className='flex flex-row lg:flex-row items-center gap-4 mb-10'>
                         <a href={LinkedIn} target='_blank'>
-                            <FaLinkedin size={24} className='hover:scale-[1.2] duration-100 hover:text-neutral-700' />
+                            <FaLinkedin size={24} className='hover:scale-[1.2] duration-100 hover:text-rose-500' />
                             </a>
                         <a href={GitHub} target='_blank'>
-                            <FaGithubSquare size={24} className='hover:scale-[1.2] duration-100 hover:text-neutral-700' />
+                            <FaGithubSquare size={24} className='hover:scale-[1.2] duration-100 hover:text-rose-500' />
                             </a>
                         <a href={X} target='_blank'>
-                            <FaSquareXTwitter size={24} className='hover:scale-[1.2] duration-100 hover:text-neutral-700' />
+                            <FaSquareXTwitter size={24} className='hover:scale-[1.2] duration-100 hover:text-rose-500' />
                         </a>
                         <a href={Facebook} target='_blank'>
-                            <FaFacebookSquare size={24} className='hover:scale-[1.2] duration-100 hover:text-neutral-700' />
+                            <FaFacebookSquare size={24} className='hover:scale-[1.2] duration-100 hover:text-rose-500' />
                         </a>
                         <a href={Instagram} target='_blank'>
-                            <FaInstagramSquare size={24} className='hover:scale-[1.2] duration-100 hover:text-neutral-700' />
+                            <FaInstagramSquare size={24} className='hover:scale-[1.2] duration-100 hover:text-rose-500' />
                         </a>
                         <a href={YouTube} target='_blank'>
-                            <FaYoutubeSquare size={24} className='hover:scale-[1.2] duration-100 hover:text-neutral-700' />
+                            <FaYoutubeSquare size={24} className='hover:scale-[1.2] duration-100 hover:text-rose-500' />
                         </a>
                     </div>
                 </div>

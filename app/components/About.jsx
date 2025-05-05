@@ -30,7 +30,7 @@ function About() {
           <Image
             src={assets.user_image}
             alt=""
-            className="w-full rounded-3xl"
+            className="w-full rounded-3xl shadow-lg shadow-neutral-500/50"
           />
         </div>
 
@@ -56,37 +56,37 @@ function About() {
             <a href={LinkedIn} target="_blank">
               <FaLinkedin
                 size={32}
-                className="hover:scale-[1.2] duration-100 hover:text-neutral-700"
+                className="hover:scale-[1.2] duration-100 hover:text-rose-500"
               />
             </a>
             <a href={GitHub} target="_blank">
               <FaGithubSquare
                 size={32}
-                className="hover:scale-[1.2] duration-100 hover:text-neutral-700"
+                className="hover:scale-[1.2] duration-100 hover:text-rose-500"
               />
             </a>
             <a href={X} target="_blank">
               <FaSquareXTwitter
                 size={32}
-                className="hover:scale-[1.2] duration-100 hover:text-neutral-700"
+                className="hover:scale-[1.2] duration-100 hover:text-rose-500"
               />
             </a>
             <a href={Facebook} target="_blank">
               <FaFacebookSquare
                 size={32}
-                className="hover:scale-[1.2] duration-100 hover:text-neutral-700"
+                className="hover:scale-[1.2] duration-100 hover:text-rose-500"
               />
             </a>
             <a href={Instagram} target="_blank">
               <FaInstagramSquare
                 size={32}
-                className="hover:scale-[1.2] duration-100 hover:text-neutral-700"
+                className="hover:scale-[1.2] duration-100 hover:text-rose-500"
               />
             </a>
             <a href={YouTube} target="_blank">
               <FaYoutubeSquare
                 size={32}
-                className="hover:scale-[1.2] duration-100 hover:text-neutral-700"
+                className="hover:scale-[1.2] duration-100 hover:text-rose-500"
               />
             </a>
           </div>
@@ -94,7 +94,7 @@ function About() {
           <div className="flex sm:flex-row items-left mt-6">
             <a
               href="#hire"
-              className="px-10 py-3 border rounded-full border-white bg-black text-white flex items-center gap-2 hover:bg-neutral-700"
+              className="px-10 py-3 border rounded-full border-white bg-black text-white flex items-center gap-2 hover:bg-rose-500"
             >
               {" "}
               hire me <IoBriefcaseOutline />
