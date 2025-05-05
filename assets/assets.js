@@ -28,8 +28,6 @@ import ui_icon from './ui-icon.png';
 import graphics_icon from './graphics-icon.png';
 import right_arrow from './right-arrow.png';
 import send_icon from './send-icon.png';
-// import right_arrow_bold from './right-arrow-bold.png';
-// import right_arrow_bold_dark from './right-arrow-bold-dark.png';
 import AERDIcon from "../public/company/AERD.jpg";
 import EOIcon from "../public/company/English-Olympiad-Global.jpg";
 import SBIcon from "../public/company/SB-Site-Icon.png";
@@ -37,17 +35,8 @@ import TechTopiaIcon from "../public/company/TechTopia.png";
 
 export const assets = {
     user_image,
-    // code_icon,
-    // code_icon_dark,
-    // edu_icon,
-    // edu_icon_dark,
-    // project_icon,
-    // project_icon_dark,
     right_arrow_white,
     logo,
-    // logo_dark,
-    // mail_icon,
-    // mail_icon_dark,
     profile_img,
     download_icon,
     hand_icon,
@@ -66,8 +55,6 @@ export const assets = {
     graphics_icon,
     right_arrow,
     send_icon,
-    // right_arrow_bold,
-    // right_arrow_bold_dark
     AERDIcon,
     TechTopiaIcon
 };
@@ -183,7 +170,6 @@ export const educations = [
 
 export const serviceData = [
     { icon: assets.web_icon, title: 'Web Development', description: 'Web development is the process of building, programming...', link: '' },
-    // { icon: assets.mobile_icon, title: 'Mobile app', description: 'Mobile app development involves creating software for mobile devices...', link: '' },
     { icon: assets.ui_icon, title: 'UI/UX Design', description: 'UI/UX design focuses on creating a seamless user experience...', link: '' },
     { icon: assets.graphics_icon, title: 'Graphics Design', description: 'Creative design solutions to enhance visual communication...', link: '' },
 ]

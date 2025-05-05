@@ -17,7 +17,9 @@ const Footer = () => {
                     {/* Email Address */}
                     <div className="flex flex-row items-center gap-2 mb-2">
                         <MdEmail className='text-rose-500' />
-                        <a href="mailto:tanzim.ikram@gmail.com" className="hover:underline">greatstackdev@gmail.com</a>
+                        <a href="mailto:tanzim.ikram@protonmail.com" className="hover:underline">
+                            tanzim.ikram@protonmail.com
+                        </a>
                     </div>
 
                     {/* Social Media Links */}
