@@ -31,6 +31,8 @@ import send_icon from './send-icon.png';
 // import right_arrow_bold from './right-arrow-bold.png';
 // import right_arrow_bold_dark from './right-arrow-bold-dark.png';
 import AERDIcon from "../public/company/AERD.jpg";
+import EOIcon from "../public/company/English-Olympiad-Global.jpg";
+import SBIcon from "../public/company/SB-Site-Icon.png";
 import TechTopiaIcon from "../public/company/TechTopia.png";
 
 export const assets = {
@@ -114,28 +116,44 @@ export const skills = [
 
 export const experiences = [
     {
-        company: "Google",
-        role: "Lead Software Engineer",
-        duration: "Nov 2019 - Present",
+        company: "Amateur Experimental Rocketry Dhaka (AERD)",
+        role: "GUI Coordinator",
+        duration: "Mar 2024 - Sep 2024",
         description:
-            "As a Senior Software Engineer at Google, I played a pivotal role in developing innovative solutions for Google's core search algorithms. Collaborating with a dynamic team of engineers, I contributed to the enhancement of search accuracy and efficiency, optimizing user experiences for millions of users worldwide.",
+            "As a GUI Coordinator at AERD, I led the development of a graphical user interface (GUI) for CanSat and flight computer systems, contributing to the success of the team's rocketry projects.",
         icon: AERDIcon,
     },
     {
-        company: "Youtube",
-        role: "Software Engineer",
-        duration: "Jan 2017 - Oct 2019",
+        company: "Amateur Experimental Rocketry Dhaka (AERD)",
+        role: "A & GNC Sub-Team Member",
+        duration: "Feb 2024 - Sep 2024",
         description:
-            "At Youtube, I served as a Software Engineer, focusing on the design and implementation of backend systems for the social media giant's dynamic platform. Working on projects that involved large-scale data processing and user engagement features, I leveraged my expertise to ensure seamless functionality and scalability.",
+            "Before being promoted to GUI Coordinator at AERD, I developed a web server using the ESP8266 microcontroller for the AERD Launch Box, improving communication and control for rocketry operations.",
         icon: AERDIcon,
     },
     {
-        company: "Apple",
-        role: "Junior Software Engineer",
-        duration: "Jan 2016 - Dec 2017",
+        company: "Tech Topia",
+        role: "Tech Envoy",
+        duration: "Nov 2023 - Mar 2024",
         description:
-            "During my tenure at Apple, I held the role of Software Architect, where I played a key role in shaping the architecture of mission-critical software projects. Responsible for designing scalable and efficient systems, I provided technical leadership to a cross-functional team.",
+            "During my tenure at Tech Topia, I spearheaded the promotion of Projukti Bijoy, the organization's inaugural online event, and created a year-in-review video to showcase the year's achievements and initiatives.",
         icon: TechTopiaIcon,
+    },
+    {
+        company: "Sensor Bazar",
+        role: "Co-founder & Website Manager",
+        duration: "Oct 2021 - Mar 2022",
+        description:
+            "During my time at Sensor Bazar, I co-founded the company and played a pivotal role in driving business growth, increasing revenue to over 65k BDT within just 2.5 months. I managed the design, development, and ongoing maintenance of the company's website, while also providing customer support and effectively handling client relations.",
+        icon: SBIcon,
+    },
+    {
+        company: "English Olympiad",
+        role: "Campus Ambassador",
+        duration: "Jul 2018 - Jan 2022",
+        description:
+            "As a Campus Ambassador for the English Olympiad, I led the Gazipur team, successfully recruiting over 250 participants for the Season 2 event. I played a key role in organizing the Gazipur District Round, ensuring its smooth execution and fostering increased participation.",
+        icon: EOIcon,
     },
 ]
 
@@ -164,36 +182,41 @@ export const educations = [
 ]
 
 export const serviceData = [
-    { icon: assets.web_icon, title: 'Web design', description: 'Web development is the process of building, programming...', link: '' },
+    { icon: assets.web_icon, title: 'Web Development', description: 'Web development is the process of building, programming...', link: '' },
     // { icon: assets.mobile_icon, title: 'Mobile app', description: 'Mobile app development involves creating software for mobile devices...', link: '' },
-    { icon: assets.ui_icon, title: 'UI/UX design', description: 'UI/UX design focuses on creating a seamless user experience...', link: '' },
-    { icon: assets.graphics_icon, title: 'Graphics design', description: 'Creative design solutions to enhance visual communication...', link: '' },
+    { icon: assets.ui_icon, title: 'UI/UX Design', description: 'UI/UX design focuses on creating a seamless user experience...', link: '' },
+    { icon: assets.graphics_icon, title: 'Graphics Design', description: 'Creative design solutions to enhance visual communication...', link: '' },
 ]
 
-export const workData = [
+export const works = [
     {
-        title: 'Frontend Project',
-        subtitle: 'web design',
-        image: '/work-1.png',
+        title: 'Culinary Odyssey',
+        subtitle: 'Web Application',
+        image: '/Projects/Culinary Odyssey.png',
     },
     {
-        title: 'Photography Site',
-        subtitle: 'web design',
-        image: '/work-3.png',
+        title: 'Virtual Bookshelf',
+        subtitle: 'Web Application',
+        image: '/Projects/Virtual Bookshelf.png',
     },
     {
-        title: 'Frontend Project',
-        subtitle: 'web design',
-        image: '/work-1.png',
+        title: 'Portfolio Website',
+        subtitle: 'Web Site',
+        image: '/Projects/Portfolio Website.png',
     },
     {
-        title: 'Photography Site',
-        subtitle: 'web design',
-        image: '/work-3.png',
+        title: 'Casa Di Pasta',
+        subtitle: 'Web Site',
+        image: '/Projects/Casa Di Pasta.png',
     },
     {
-        title: 'UI/UX Designing',
-        subtitle: 'ui/ux design',
-        image: '/work-4.png',
+        title: 'FundMe',
+        subtitle: 'Web Application',
+        image: '/Projects/FundMe.png',
+    },
+    {
+        title: 'Dhaka Metro Rail',
+        subtitle: 'Web Application',
+        image: '/Projects/Dhaka Metro Rail.png',
     },
 ]
