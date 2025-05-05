@@ -2,39 +2,16 @@ import React from 'react';
 import Image from 'next/image';
 import { IoIosArrowRoundForward } from 'react-icons/io';
 import { MdOutlineArrowOutward } from "react-icons/md";
+import { workData } from "@/assets/assets";
 
-const workData = [
-  {
-    title: 'Frontend Project',
-    subtitle: 'web design',
-    image: '/work-1.png',
-  },
-  {
-    title: 'Photography Site',
-    subtitle: 'web design',
-    image: '/work-3.png',
-  },
-  {
-    title: 'Frontend Project',
-    subtitle: 'web design',
-    image: '/work-1.png',
-  },
-  {
-    title: 'Photography Site',
-    subtitle: 'web design',
-    image: '/work-3.png',
-  },
-  {
-    title: 'UI/UX Designing',
-    subtitle: 'ui/ux design',
-    image: '/work-4.png',
-  },
-];
+// Data for the work cards, each object represents a project
+
 
 const Work = () => {
   return (
     <section id="work" className="py-20 mb-10 text-center bg-white px-[12%]">
       <div className="max-w-6xl mx-auto">
+        {/* Section heading */}
         <h4 className="text-lg mb-2 font-Ovo">My portfolio</h4>
         <h2 className="text-4xl md:text-5xl font-Ovo mb-4">My latest work</h2>
         <p className="font-Ovo text-gray-600 max-w-2xl mx-auto mb-12">
@@ -49,6 +26,7 @@ const Work = () => {
               key={index}
               className="w-full sm:w-[280px] md:w-[240px] lg:w-[220px] xl:w-[250px] rounded-xl overflow-hidden shadow-sm relative group hover:shadow-md cursor-pointer duration-300 ease-in-out hover:scale-[1.02]"
             >
+              {/* Project image */}
               <Image
                 src={item.image}
                 alt={item.title}
@@ -57,11 +35,13 @@ const Work = () => {
                 className="w-full h-auto object-cover"
               />
 
+              {/* Overlay with project details */}
               <div className="absolute bottom-4 left-4 right-4 bg-white/90 backdrop-blur-sm p-3 rounded-md flex items-center justify-between">
                 <div className="text-left">
                   <h3 className="text-sm font-semibold font-Ovo text-gray-800">{item.title}</h3>
                   <p className="text-xs text-gray-500 font-Ovo">{item.subtitle}</p>
                 </div>
+                {/* Icon with hover effect */}
                 <div className="w-6 h-6 rounded-full bg-rose-500 flex items-center justify-center hover:rotate-45 transition duration-300"> 
                   <MdOutlineArrowOutward className='text-white'/>
                 </div>

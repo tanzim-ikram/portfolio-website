@@ -141,48 +141,25 @@ export const experiences = [
 
 export const educations = [
     {
-      year: "2016 - 2017",
-      title: "Secondary School Certificate (SSC)",
-      institute: "Rani Bilasmoni Govt. Boys' High School",
-      department: "Science",
-      gpa: "5.00",
+        year: "2016 - 2017",
+        title: "Secondary School Certificate (SSC)",
+        institute: "Rani Bilasmoni Govt. Boys' High School",
+        department: "Science",
+        gpa: "5.00",
     },
     {
-      year: "2018 - 2019",
-      title: "Higher Secondary School Certificate (HSC)",
-      institute: "Gazipur Cantonment College",
-      department: "Science",
-      gpa: "5.00",
+        year: "2018 - 2019",
+        title: "Higher Secondary School Certificate (HSC)",
+        institute: "Gazipur Cantonment College",
+        department: "Science",
+        gpa: "5.00",
     },
     {
-      year: "2021 - Present",
-      title: "Bachelor of Science (BSc)",
-      institute: "American International University-Bangladesh",
-      department: "Computer Science and Engineering",
-      gpa: "CGPA: 3.84",
-    },
-  ]
-
-export const workData = [
-    {
-        title: 'Frontend project',
-        description: 'Web Design',
-        bgImage: '/work-1.png',
-    },
-    {
-        title: 'Geo based app',
-        description: 'Mobile App',
-        bgImage: '/work-2.png',
-    },
-    {
-        title: 'Photography site',
-        description: 'Web Design',
-        bgImage: '/work-3.png',
-    },
-    {
-        title: 'UI/UX designing',
-        description: 'UI/UX Design',
-        bgImage: '/work-4.png',
+        year: "2021 - Present",
+        title: "Bachelor of Science (BSc)",
+        institute: "American International University-Bangladesh",
+        department: "Computer Science and Engineering",
+        gpa: "CGPA: 3.84",
     },
 ]
 
@@ -193,12 +170,30 @@ export const serviceData = [
     { icon: assets.graphics_icon, title: 'Graphics design', description: 'Creative design solutions to enhance visual communication...', link: '' },
 ]
 
-// export const infoList = [
-//     { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript React Js, Next Js' },
-//     { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.Tech in Computer Science' },
-//     { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built more than 5 projects' }
-// ];
-
-// export const toolsData = [
-//     assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git
-// ];
+export const workData = [
+    {
+        title: 'Frontend Project',
+        subtitle: 'web design',
+        image: '/work-1.png',
+    },
+    {
+        title: 'Photography Site',
+        subtitle: 'web design',
+        image: '/work-3.png',
+    },
+    {
+        title: 'Frontend Project',
+        subtitle: 'web design',
+        image: '/work-1.png',
+    },
+    {
+        title: 'Photography Site',
+        subtitle: 'web design',
+        image: '/work-3.png',
+    },
+    {
+        title: 'UI/UX Designing',
+        subtitle: 'ui/ux design',
+        image: '/work-4.png',
+    },
+]

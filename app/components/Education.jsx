@@ -1,5 +1,5 @@
 import React from "react";
-import { educations } from "@/assets/assets";
+import { educations } from "@/assets/assets"; // Importing the education data from assets
 
 const Education = () => {
   return (
@@ -8,6 +8,7 @@ const Education = () => {
       className="py-20 px-4 sm:px-[12%] bg-white text-center"
     >
       <div className="max-w-4xl mx-auto">
+        {/* Section heading */}
         <h4 className="text-lg font-Ovo mb-2">Education</h4>
         <h2 className="text-4xl font-Ovo mb-4">My Education</h2>
         <p className="font-Ovo text-gray-600 mb-10">
@@ -19,22 +20,23 @@ const Education = () => {
           {educations.map((edu, i) => (
             <div key={i} className="flex flex-col justify-center items-center">
               <div className="w-full max-w-md px-4">
+                {/* Individual education card */}
                 <div className="bg-white border border-gray-300 rounded-md p-4 shadow-sm hover:shadow-md transition-transform transform hover:scale-[1.02] duration-500 ease-in-out">
                   <span className="text-lg font-semibold font-Ovo text-center block mb-4">
-                    {edu.year}
+                    {edu.year} {/* Year of education */}
                   </span>
 
                   <h3 className="font-Ovo text-base font-semibold text-gray-800">
-                    {edu.title}
+                    {edu.title} {/* Title of the degree or program */}
                   </h3>
                   <p className="text-base font-Ovo text-gray-700 mt-2">
-                    Department: {edu.department}
+                    Department: {edu.department} {/* Department name */}
                   </p>
                   <p className="text-base font-Ovo text-gray-700 mt-2">
-                    {edu.institute}
+                    {edu.institute} {/* Name of the institute */}
                   </p>
                   <p className="text-base font-Ovo text-gray-700 mt-2">
-                    {edu.gpa.startsWith("CGPA") ? edu.gpa : `GPA: ${edu.gpa}`}
+                    {edu.gpa.startsWith("CGPA") ? edu.gpa : `GPA: ${edu.gpa}`} {/* GPA or CGPA */}
                   </p>
                 </div>
               </div>
@@ -44,18 +46,19 @@ const Education = () => {
 
         {/* Desktop layout: Vertical timeline */}
         <div className="hidden md:block relative">
+          {/* Vertical timeline line */}
           <div className="absolute left-1/2 top-0 w-1 h-full -translate-x-1/2 bg-gray-300" />
 
           <div className="space-y-14">
             {educations.map((edu, i) => {
-              const isLeft = i % 2 !== 0;
+              const isLeft = i % 2 !== 0; // Determine if the card should be on the left or right side
 
               return (
                 <div
                   key={i}
                   className="relative flex flex-col md:flex-row md:items-start"
                 >
-                  {/* Dot */}
+                  {/* Timeline dot */}
                   <div className="absolute left-1/2 -translate-x-1/2 w-6 h-6 rounded-full bg-black border-4 border-white z-10 top-2" />
 
                   {/* Left side */}
@@ -63,22 +66,22 @@ const Education = () => {
                     {isLeft && (
                       <div className="md:pr-10 text-right">
                         <span className="text-lg font-semibold font-Ovo text-gray-900 block mt-2 mb-4">
-                          {edu.year}
+                          {edu.year} {/* Year of education */}
                         </span>
                         <div className="bg-white border border-gray-400 rounded-md p-4 shadow-sm transition-transform transform hover:scale-[1.02] hover:shadow-md cursor-pointer hover:bg-rose-50 duration-500 ease-in-out">
                           <h3 className="font-Ovo text-base font-semibold">
-                            {edu.title}
+                            {edu.title} {/* Title of the degree or program */}
                           </h3>
                           <p className="text-base font-Ovo text-gray-700">
-                            Department: {edu.department}
+                            Department: {edu.department} {/* Department name */}
                           </p>
                           <p className="text-base font-Ovo text-gray-700">
-                            {edu.institute}
+                            {edu.institute} {/* Name of the institute */}
                           </p>
                           <p className="text-base font-Ovo text-gray-700">
                             {edu.gpa.startsWith("CGPA")
                               ? edu.gpa
-                              : `GPA: ${edu.gpa}`}
+                              : `GPA: ${edu.gpa}`} {/* GPA or CGPA */}
                           </p>
                         </div>
                       </div>
@@ -90,22 +93,22 @@ const Education = () => {
                     {!isLeft && (
                       <>
                         <span className="text-lg font-semibold font-Ovo text-gray-900 block mt-2 mb-4">
-                          {edu.year}
+                          {edu.year} {/* Year of education */}
                         </span>
                         <div className="bg-white border border-gray-300 rounded-md p-4 shadow-sm transition-transform transform hover:scale-[1.02] hover:shadow-md hover:bg-rose-50 duration-500 ease-in-out">
                           <h3 className="font-Ovo text-base font-semibold">
-                            {edu.title}
+                            {edu.title} {/* Title of the degree or program */}
                           </h3>
                           <p className="text-base font-Ovo text-gray-700">
-                            {edu.institute}
+                            {edu.institute} {/* Name of the institute */}
                           </p>
                           <p className="text-base font-Ovo text-gray-700">
-                            Department: {edu.department}
+                            Department: {edu.department} {/* Department name */}
                           </p>
                           <p className="text-base font-Ovo text-gray-700">
                             {edu.gpa.startsWith("CGPA")
                               ? edu.gpa
-                              : `GPA: ${edu.gpa}`}
+                              : `GPA: ${edu.gpa}`} {/* GPA or CGPA */}
                           </p>
                         </div>
                       </>
