@@ -32,6 +32,11 @@ import AERDIcon from "../public/company/AERD.jpg";
 import EOIcon from "../public/company/English-Olympiad-Global.jpg";
 import SBIcon from "../public/company/SB-Site-Icon.png";
 import TechTopiaIcon from "../public/company/TechTopia.png";
+import AbroadIcon from "../public/company/abroad-company.png";
+import EnvoleadIcon from "../public/company/Envolead-Logo.png";
+import CYCIcon from "../public/company/cyc-logo.png";
+import AIUBEnvIcon from "../public/company/aiub-environment-club.png";
+import RoboIcon from "../public/company/roboment.jpg";
 
 export const assets = {
     user_image,
@@ -129,11 +134,35 @@ export const skills = skillCategories.flatMap((category) => category.items)
 
 export const experiences = [
     {
+        company: "The Abroad Company",
+        role: "Product Experience Engineer",
+        duration: "Dec 2025 - Sep 2026",
+        description:
+            "Built a mentor recommendation engine and multi-mentor booking system with bundle discounts, plus a unified design system for ApplicationMate.",
+        icon: AbroadIcon,
+    },
+    {
+        company: "Envolead Ltd.",
+        role: "Digital Innovation & Impact Intern",
+        duration: "May 2025 - Oct 2025",
+        description:
+            "Built a full-stack organizational website with admin dashboard and CMS (Laravel, Vue.js, MySQL) and designed EnvoYouth's mobile app.",
+        icon: EnvoleadIcon,
+    },
+    {
+        company: "Connecting Youth for Change (CYC)",
+        role: "Senior Member",
+        duration: "May 2019 - Dec 2024",
+        description:
+            "Organized student competitions across Gazipur, ran flood and COVID-19 fundraising, and helped coordinate the USA-Bangladesh Online Exchange Program.",
+        icon: CYCIcon,
+    },
+    {
         company: "Amateur Experimental Rocketry Dhaka (AERD)",
         role: "GUI Coordinator",
         duration: "Mar 2024 - Sep 2024",
         description:
-            "As a GUI Coordinator at AERD, I led the development of a graphical user interface (GUI) for CanSat and flight computer systems, contributing to the success of the team's rocketry projects.",
+            "Led development of the GUI for CanSat and flight computer systems, supporting the team's rocketry projects.",
         icon: AERDIcon,
     },
     {
@@ -141,23 +170,39 @@ export const experiences = [
         role: "A & GNC Sub-Team Member",
         duration: "Feb 2024 - Sep 2024",
         description:
-            "Before being promoted to GUI Coordinator at AERD, I developed a web server using the ESP8266 microcontroller for the AERD Launch Box, improving communication and control for rocketry operations.",
+            "Developed an ESP8266 web server for the AERD Launch Box, improving communication and control for rocketry operations.",
         icon: AERDIcon,
+    },
+    {
+        company: "AIUB Environment Club",
+        role: "General Member",
+        duration: "Oct 2023 - Jul 2024",
+        description:
+            "As an early member, supported environmental awareness campaigns on social media and helped organize World Environment Day 2024 at AIUB.",
+        icon: AIUBEnvIcon,
     },
     {
         company: "Tech Topia",
         role: "Tech Envoy",
         duration: "Nov 2023 - Mar 2024",
         description:
-            "During my tenure at Tech Topia, I spearheaded the promotion of Projukti Bijoy, the organization's inaugural online event, and created a year-in-review video to showcase the year's achievements and initiatives.",
+            "Promoted Projukti Bijoy, the organization's first online event, and produced a year-in-review video of its achievements.",
         icon: TechTopiaIcon,
+    },
+    {
+        company: "Roboment R&D Lab",
+        role: "Member",
+        duration: "Oct 2018 - Apr 2022",
+        description:
+            "Helped run free robotics camps for students, tested robotics kits, and supported product development, social media and order coordination.",
+        icon: RoboIcon,
     },
     {
         company: "Sensor Bazar",
         role: "Co-founder & Website Manager",
         duration: "Oct 2021 - Mar 2022",
         description:
-            "During my time at Sensor Bazar, I co-founded the company and played a pivotal role in driving business growth, increasing revenue to over 65k BDT within just 2.5 months. I managed the design, development, and ongoing maintenance of the company's website, while also providing customer support and effectively handling client relations.",
+            "Co-founded the company, grew revenue past 65k BDT in 2.5 months, and managed the website, customer support and client relations.",
         icon: SBIcon,
     },
     {
@@ -165,7 +210,7 @@ export const experiences = [
         role: "Campus Ambassador",
         duration: "Jul 2018 - Jan 2022",
         description:
-            "As a Campus Ambassador for the English Olympiad, I led the Gazipur team, successfully recruiting over 250 participants for the Season 2 event. I played a key role in organizing the Gazipur District Round, ensuring its smooth execution and fostering increased participation.",
+            "Led the Gazipur team, recruiting 250+ participants for Season 2 and helping organize the Gazipur District Round.",
         icon: EOIcon,
     },
 ]
@@ -186,11 +231,11 @@ export const educations = [
         gpa: "5.00",
     },
     {
-        year: "2021 - Present",
+        year: "2021 - 2025",
         title: "Bachelor of Science (BSc)",
         institute: "American International University-Bangladesh",
         department: "Computer Science and Engineering",
-        gpa: "CGPA: 3.84",
+        gpa: "CGPA: 3.82",
     },
 ]
 

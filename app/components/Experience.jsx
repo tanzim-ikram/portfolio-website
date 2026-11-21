@@ -1,7 +1,18 @@
+"use client";
+
+import { useState } from "react";
 import Image from "next/image";
+import { IoIosArrowRoundForward } from "react-icons/io";
 import { experiences } from "@/assets/assets"; // Importing experiences data from assets
 
+const INITIAL_COUNT = 3;
+
 const Experience = () => {
+  const [showAll, setShowAll] = useState(false);
+  const visibleExperiences = showAll
+    ? experiences
+    : experiences.slice(0, INITIAL_COUNT);
+
   return (
     <section id="experience" className="py-20 px-[12%] bg-white text-center">
       <div className="max-w-4xl mx-auto">
@@ -14,7 +25,7 @@ const Experience = () => {
 
         {/* Experience Cards */}
         <div className="space-y-6 text-left">
-          {experiences.map((exp, index) => (
+          {visibleExperiences.map((exp, index) => (
             <div
               key={index} // Unique key for each experience card
               className="bg-white border border-gray-300 rounded-xl shadow-sm p-6 space-y-2 hover:shadow-md hover:bg-rose-50 hover:scale-[1.02] duration-500 ease-in-out"
@@ -50,6 +61,21 @@ const Experience = () => {
             </div>
           ))}
         </div>
+
+        {/* View all / show less toggle */}
+        {experiences.length > INITIAL_COUNT && (
+          <div className="mt-12">
+            <button
+              type="button"
+              aria-expanded={showAll}
+              onClick={() => setShowAll((v) => !v)}
+              className="text-lg px-10 py-3 rounded-full border border-gray-500 font-Ovo text-gray-600 hover:bg-rose-500 hover:text-white hover:border-rose-500 flex items-center gap-2 mx-auto transition"
+            >
+              {showAll ? "Show less" : "View all"}
+              <IoIosArrowRoundForward size={24} />
+            </button>
+          </div>
+        )}
       </div>
     </section>
   );
