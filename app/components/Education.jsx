@@ -1,4 +1,3 @@
-import React from "react";
 import { educations } from "@/assets/assets"; // Importing the education data from assets
 
 const Education = () => {
@@ -9,8 +8,8 @@ const Education = () => {
     >
       <div className="max-w-4xl mx-auto">
         {/* Section heading */}
-        <h4 className="text-lg font-Ovo mb-2">Education</h4>
-        <h2 className="text-4xl font-Ovo mb-4">My Education</h2>
+        <p className="text-lg font-Ovo mb-2">Education</p>
+        <h2 className="text-4xl md:text-5xl font-Ovo mb-4">My Education</h2>
         <p className="font-Ovo text-gray-600 mb-10">
           Here is a quick summary of my educational background
         </p>
@@ -30,10 +29,10 @@ const Education = () => {
                     {edu.title} {/* Title of the degree or program */}
                   </h3>
                   <p className="text-base font-Ovo text-gray-700 mt-2">
-                    Department: {edu.department} {/* Department name */}
+                    {edu.institute} {/* Name of the institute */}
                   </p>
                   <p className="text-base font-Ovo text-gray-700 mt-2">
-                    {edu.institute} {/* Name of the institute */}
+                    Department: {edu.department} {/* Department name */}
                   </p>
                   <p className="text-base font-Ovo text-gray-700 mt-2">
                     {edu.gpa.startsWith("CGPA") ? edu.gpa : `GPA: ${edu.gpa}`} {/* GPA or CGPA */}
@@ -56,27 +55,27 @@ const Education = () => {
               return (
                 <div
                   key={i}
-                  className="relative flex flex-col md:flex-row md:items-start"
+                  className="relative flex items-start"
                 >
                   {/* Timeline dot */}
                   <div className="absolute left-1/2 -translate-x-1/2 w-6 h-6 rounded-full bg-black border-4 border-white z-10 top-2" />
 
                   {/* Left side */}
-                  <div className="hidden md:block md:w-1/2 px-4">
+                  <div className="w-1/2 px-4">
                     {isLeft && (
-                      <div className="md:pr-10 text-right">
+                      <div className="pr-10 text-right">
                         <span className="text-lg font-semibold font-Ovo text-gray-900 block mt-2 mb-4">
                           {edu.year} {/* Year of education */}
                         </span>
-                        <div className="bg-white border border-gray-400 rounded-md p-4 shadow-sm transition-transform transform hover:scale-[1.02] hover:shadow-md cursor-pointer hover:bg-rose-50 duration-500 ease-in-out">
+                        <div className="bg-white border border-gray-300 rounded-md p-4 shadow-sm transition-transform transform hover:scale-[1.02] hover:shadow-md hover:bg-rose-50 duration-500 ease-in-out">
                           <h3 className="font-Ovo text-base font-semibold">
                             {edu.title} {/* Title of the degree or program */}
                           </h3>
                           <p className="text-base font-Ovo text-gray-700">
-                            Department: {edu.department} {/* Department name */}
+                            {edu.institute} {/* Name of the institute */}
                           </p>
                           <p className="text-base font-Ovo text-gray-700">
-                            {edu.institute} {/* Name of the institute */}
+                            Department: {edu.department} {/* Department name */}
                           </p>
                           <p className="text-base font-Ovo text-gray-700">
                             {edu.gpa.startsWith("CGPA")
@@ -89,7 +88,7 @@ const Education = () => {
                   </div>
 
                   {/* Right side */}
-                  <div className="w-full md:w-1/2 px-4 md:pl-10 text-right md:text-left">
+                  <div className="w-1/2 px-4 pl-10 text-left">
                     {!isLeft && (
                       <>
                         <span className="text-lg font-semibold font-Ovo text-gray-900 block mt-2 mb-4">

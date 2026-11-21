@@ -1,4 +1,3 @@
-import React from "react";
 import Image from "next/image";
 import { experiences } from "@/assets/assets"; // Importing experiences data from assets
 
@@ -7,8 +6,8 @@ const Experience = () => {
     <section id="experience" className="py-20 px-[12%] bg-white text-center">
       <div className="max-w-4xl mx-auto">
         {/* Section Header */}
-        <h4 className="text-lg mb-2 font-Ovo">Experience</h4>
-        <h2 className="text-4xl font-Ovo mb-4">My Experience</h2>
+        <p className="text-lg mb-2 font-Ovo">Experience</p>
+        <h2 className="text-4xl md:text-5xl font-Ovo mb-4">My Experience</h2>
         <p className="font-Ovo text-gray-600 mb-10">
           Here is a quick summary of my most recent experiences
         </p>
@@ -18,7 +17,7 @@ const Experience = () => {
           {experiences.map((exp, index) => (
             <div
               key={index} // Unique key for each experience card
-              className="bg-white border border-gray-400 rounded-xl shadow-sm p-6 space-y-2 hover:shadow-md cursor-pointer hover:bg-rose-50 hover:scale-[1.02] duration-500 ease-in-out"
+              className="bg-white border border-gray-300 rounded-xl shadow-sm p-6 space-y-2 hover:shadow-md hover:bg-rose-50 hover:scale-[1.02] duration-500 ease-in-out"
             >
               {/* Row 1: Logo + Title + Duration */}
               <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-3">
@@ -26,7 +25,7 @@ const Experience = () => {
                   {/* Company Logo */}
                   <Image
                     src={exp.icon} // Company logo
-                    alt={exp.company} // Alt text for accessibility
+                    alt=""
                     width={28}
                     height={28}
                     className="rounded-full"
@@ -39,7 +38,7 @@ const Experience = () => {
                 </div>
 
                 {/* Duration of the Experience */}
-                <span className="text-sm font-Ovo text-gray-500 sm:text-right">
+                <span className="text-sm font-Ovo text-gray-600 sm:text-right">
                   {exp.duration}
                 </span>
               </div>
@@ -56,4 +55,4 @@ const Experience = () => {
   );
 };
 
-export default Experience; // Exporting the Experience component
+export default Experience;

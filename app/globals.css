@@ -1,6 +1,13 @@
 @import "tailwindcss";
 
-* {
-  /* font-family: Outfit; */
-  font-family: Ovo;
+@theme {
+  --color-primary: #11001f;
+  --color-secondary: #fcf4ff;
+  --color-accent: #ec1655;
+  --font-Outfit: var(--font-outfit), sans-serif;
+  --font-Ovo: var(--font-ovo), serif;
+}
+
+body {
+  font-family: var(--font-ovo), serif;
 }

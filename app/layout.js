@@ -3,24 +3,27 @@ import "./globals.css";
 
 const outfit = Outfit({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"]
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-outfit",
 });
 
 const ovo = Ovo({
   subsets: ["latin"],
-  weight: ["400"]
+  weight: ["400"],
+  variable: "--font-ovo",
 });
 
 export const metadata = {
-  title: "Tanzim's Portfolio",
-  description: "",
+  title: "Tanzim Ikram Sheikh | Portfolio",
+  description:
+    "Portfolio of Tanzim Ikram Sheikh, a web developer and UI/UX designer.",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`${outfit.className} ${ovo.className} antialiased leading-8 overflow-x-hidden`}
+        className={`${outfit.variable} ${ovo.variable} antialiased leading-8 overflow-x-hidden`}
       >
         {children}
       </body>

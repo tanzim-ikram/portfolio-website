@@ -1,4 +1,6 @@
-import React, { useState } from "react";
+"use client";
+
+import { useState } from "react";
 import { IoIosArrowRoundForward } from "react-icons/io";
 
 const Contact = () => {
@@ -8,7 +10,7 @@ const Contact = () => {
     // Function to handle form submission
     const onSubmit = async (event) => {
         event.preventDefault(); // Prevent default form submission behavior
-        setResult("Sending...."); // Display a loading message
+        setResult("Sending..."); // Display a loading message
 
         const formData = new FormData(event.target); // Collect form data
         formData.append("access_key", "87e1a44a-33a6-426a-8f37-d603e3217d6a"); // Add access key for API authentication
@@ -24,11 +26,10 @@ const Contact = () => {
 
             if (data.success) {
                 // If the API response indicates success
-                setResult("Form Submitted Successfully"); // Update the result message
+                setResult("Form submitted successfully"); // Update the result message
                 event.target.reset(); // Reset the form fields
             } else {
                 // If the API response indicates an error
-                console.log("Error", data); // Log the error for debugging
                 setResult(data.message); // Display the error message
             }
         } catch (error) {
@@ -41,14 +42,14 @@ const Contact = () => {
     return (
         <section
             id="contact"
-            className="text-center w-full px-[12%] py-10 scroll-mt-20"
+            className="text-center w-full px-[12%] py-20 scroll-mt-20"
         >
             <div className="max-w-xl mx-auto">
                 {/* Section heading */}
-                <h4 className="text-center text-lg mb-2 font-Ovo">Connect with me</h4>
+                <p className="text-center text-lg mb-2 font-Ovo">Connect with me</p>
                 <h2 className="text-4xl md:text-5xl font-Ovo mb-6">Get in touch</h2>
                 <p className="max-w-2xl text-center mx-auto font-Ovo text-gray-600 mb-10">
-                    I'd love to hear from you! If you have any questions, comments or
+                    I&apos;d love to hear from you! If you have any questions, comments or
                     feedback, please use the form below.
                 </p>
 
@@ -56,14 +57,18 @@ const Contact = () => {
                 <form onSubmit={onSubmit} className="max-w-2xl mx-auto space-y-6">
                     {/* Input fields for name and email */}
                     <div className="flex flex-col sm:flex-row gap-4">
+                        <label className="sr-only" htmlFor="name">Name</label>
                         <input
+                            id="name"
                             type="text"
                             name="name"
                             placeholder="Enter your name"
                             className="w-full border border-gray-300 rounded-md px-4 py-3 font-Ovo placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-rose-500"
                             required
                         />
+                        <label className="sr-only" htmlFor="email">Email</label>
                         <input
+                            id="email"
                             type="email"
                             name="email"
                             placeholder="Enter your email"
@@ -73,8 +78,10 @@ const Contact = () => {
                     </div>
 
                     {/* Textarea for the message */}
+                    <label className="sr-only" htmlFor="message">Message</label>
                     <textarea
-                        rows="6"
+                        id="message"
+                        rows={6}
                         name="message"
                         placeholder="Enter your message"
                         className="w-full border border-gray-300 rounded-md px-4 py-3 font-Ovo placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-rose-500"
@@ -86,11 +93,11 @@ const Contact = () => {
                         type="submit"
                         className="mx-auto flex items-center gap-2 bg-black text-white px-8 py-3 rounded-full font-Ovo hover:bg-rose-500 transition"
                     >
-                        Submit now <IoIosArrowRoundForward size={20} />
+                        Submit <IoIosArrowRoundForward size={20} />
                     </button>
 
                     {/* Display result message */}
-                    <p className="mt-4 text-rose-500">{result}</p>
+                    <p className="mt-4 text-rose-500" aria-live="polite">{result}</p>
                 </form>
             </div>
         </section>

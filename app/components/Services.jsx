@@ -1,12 +1,11 @@
 import { assets, serviceData } from "@/assets/assets"; // Importing assets and service data from the assets module
-import React from "react";
 import Image from "next/image"; // Importing Next.js Image component for optimized image rendering
 
-function Services() {
+const Services = () => {
   return (
     <div id="services" className="w-full px-[12%] py-20 scroll-mt-20">
       {/* Section heading */}
-      <h4 className="text-center mb-2 text-lg font-Ovo">What I offer</h4>
+      <p className="text-center mb-2 text-lg font-Ovo">What I offer</p>
       <h2 className="text-center mb-4 text-4xl md:text-5xl font-Ovo">
         My Services
       </h2>
@@ -26,7 +25,7 @@ function Services() {
             {/* Service icon */}
             <Image
               src={icon}
-              alt={title}
+              alt=""
               width={40}
               height={40}
               className="w-10 h-10"
@@ -37,19 +36,21 @@ function Services() {
             </h3>
             {/* Service description */}
             <p className="text-gray-600 text-sm leading-5">{description}</p>
-            {/* Link to read more about the service */}
-            <a
-              href={link}
-              className="flex items-center gap-2 text-sm text-gray-500 mt-4 hover:underline"
-            >
-              Read more{" "}
-              <Image src={assets.right_arrow} alt="" className="w-4" />
-            </a>
+            {/* Link to read more about the service (only when a target exists) */}
+            {link && (
+              <a
+                href={link}
+                className="flex items-center gap-2 text-sm text-gray-600 mt-4 hover:underline"
+              >
+                Read more{" "}
+                <Image src={assets.right_arrow} alt="" className="w-4" />
+              </a>
+            )}
           </div>
         ))}
       </div>
     </div>
   );
-}
+};
 
-export default Services; // Exporting the Services component
+export default Services;
