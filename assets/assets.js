@@ -61,10 +61,8 @@ export const assets = {
 
 export const LinkedIn = 'https://www.linkedin.com/in/tanzim-ikram-sheikh/'
 export const GitHub = 'https://github.com/tanzim-ikram'
-export const X = 'https://x.com/tanzim_ikram'
-export const Facebook = 'https://www.facebook.com/TanzimIkramSheikh'
-export const Instagram = 'https://www.instagram.com/10_zim'
-export const YouTube = 'https://www.youtube.com/@techwithtanzim'
+export const Behance = 'https://www.behance.net/tanzimikram'
+export const Dribbble = 'https://dribbble.com/tanzim-ikram-sheikh'
 
 export const skills = [
     { name: "HTML", icon: "/icons/HTML5.svg" },

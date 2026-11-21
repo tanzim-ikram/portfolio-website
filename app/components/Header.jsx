@@ -23,13 +23,13 @@ const Header = () => {
 
         <h1 className="text-3xl sm:text-6xl lg:text-[66px] font-Ovo leading-tight">
           {/* Main title describing the role */}
-          Web Developer & UI/UX Designer
+          UI/UX Designer & Web Developer
         </h1>
 
         <p className="max-w-2xl mx-auto font-Ovo">
           {/* Short description about the individual */}
           Creating innovative and efficient digital solutions with a focus on
-          front-end development and user experience.
+          user experience and front-end development.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center gap-4 mt-6">

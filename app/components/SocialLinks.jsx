@@ -1,27 +1,16 @@
-import {
-  LinkedIn,
-  GitHub,
-  X,
-  Facebook,
-  Instagram,
-  YouTube,
-} from "@/assets/assets";
+import { LinkedIn, GitHub, Behance, Dribbble } from "@/assets/assets";
 import {
   FaLinkedin,
   FaGithubSquare,
-  FaFacebookSquare,
-  FaInstagramSquare,
-  FaYoutubeSquare,
+  FaBehanceSquare,
+  FaDribbbleSquare,
 } from "react-icons/fa";
-import { FaSquareXTwitter } from "react-icons/fa6";
 
 const socials = [
   { label: "LinkedIn", href: LinkedIn, Icon: FaLinkedin },
   { label: "GitHub", href: GitHub, Icon: FaGithubSquare },
-  { label: "X", href: X, Icon: FaSquareXTwitter },
-  { label: "Facebook", href: Facebook, Icon: FaFacebookSquare },
-  { label: "Instagram", href: Instagram, Icon: FaInstagramSquare },
-  { label: "YouTube", href: YouTube, Icon: FaYoutubeSquare },
+  { label: "Behance", href: Behance, Icon: FaBehanceSquare },
+  { label: "Dribbble", href: Dribbble, Icon: FaDribbbleSquare },
 ];
 
 const SocialLinks = ({ size = 24, className = "" }) => (
