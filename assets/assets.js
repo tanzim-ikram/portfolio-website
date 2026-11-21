@@ -64,40 +64,68 @@ export const GitHub = 'https://github.com/tanzim-ikram'
 export const Behance = 'https://www.behance.net/tanzimikram'
 export const Dribbble = 'https://dribbble.com/tanzim-ikram-sheikh'
 
-export const skills = [
-    { name: "HTML", icon: "/icons/HTML5.svg" },
-    { name: "CSS", icon: "/icons/CSS3.svg" },
-    { name: "JavaScript", icon: "/icons/JavaScript.svg" },
-    { name: "TypeScript", icon: "/icons/TypeScript.svg" },
-    { name: "React", icon: "/icons/React.svg" },
-    { name: "Figma", icon: "/icons/Figma.svg" },
-    { name: "Next.js", icon: "/icons/Next.js.svg" },
-    { name: "Node.js", icon: "/icons/Node.js.svg" },
-    { name: "Nest.js", icon: "/icons/Nest.js.svg" },
-    { name: "PostgreSQL", icon: "/icons/PostgreSQL.svg" },
-    { name: "PHP", icon: "/icons/PHP.svg" },
-    { name: "MySQL", icon: "/icons/MySQL.svg" },
-    { name: "XML", icon: "/icons/XML.svg" },
-    { name: "JSON", icon: "/icons/JSON.svg" },
-    { name: "Tailwind CSS", icon: "/icons/Tailwind CSS.svg" },
-    { name: "Bootstrap", icon: "/icons/Bootstrap.svg" },
-    { name: "Python", icon: "/icons/Python.svg" },
-    { name: "Flask", icon: "/icons/Flask.svg" },
-    { name: "Pandas", icon: "/icons/Pandas.svg" },
-    { name: "Matplotlib", icon: "/icons/Matplotlib.svg" },
-    { name: "NumPy", icon: "/icons/NumPy.svg" },
-    { name: "Anaconda", icon: "/icons/Anaconda.svg" },
-    { name: "NPM", icon: "/icons/NPM.svg" },
-    { name: "VS Code", icon: "/icons/VS Code.svg" },
-    { name: "Postman", icon: "/icons/Postman.svg" },
-    { name: "GitHub", icon: "/icons/GitHub.svg" },
-    { name: "Git", icon: "/icons/Git.svg" },
-    { name: "Arduino", icon: "/icons/Arduino.svg" },
-    { name: "C", icon: "/icons/C.svg" },
-    { name: "C++", icon: "/icons/CPP.svg" },
-    { name: "WordPress", icon: "/icons/WordPress.svg" },
-    { name: "WooCommerce", icon: "/icons/WooCommerce.svg" }
+export const skillCategories = [
+    {
+        name: "Design & Frontend",
+        items: [
+            { name: "Figma", icon: "/icons/Figma.svg" },
+            { name: "HTML", icon: "/icons/HTML5.svg" },
+            { name: "CSS", icon: "/icons/CSS3.svg" },
+            { name: "JavaScript", icon: "/icons/JavaScript.svg" },
+            { name: "TypeScript", icon: "/icons/TypeScript.svg" },
+            { name: "React", icon: "/icons/React.svg" },
+            { name: "Next.js", icon: "/icons/Next.js.svg" },
+            { name: "Tailwind CSS", icon: "/icons/Tailwind CSS.svg" },
+            { name: "Bootstrap", icon: "/icons/Bootstrap.svg" }
+        ]
+    },
+    {
+        name: "Backend & Databases",
+        items: [
+            { name: "Node.js", icon: "/icons/Node.js.svg" },
+            { name: "Nest.js", icon: "/icons/Nest.js.svg" },
+            { name: "PHP", icon: "/icons/PHP.svg" },
+            { name: "Flask", icon: "/icons/Flask.svg" },
+            { name: "PostgreSQL", icon: "/icons/PostgreSQL.svg" },
+            { name: "MySQL", icon: "/icons/MySQL.svg" },
+            { name: "JSON", icon: "/icons/JSON.svg" },
+            { name: "XML", icon: "/icons/XML.svg" },
+            { name: "WordPress", icon: "/icons/WordPress.svg" },
+            { name: "WooCommerce", icon: "/icons/WooCommerce.svg" }
+        ]
+    },
+    {
+        name: "Python & Data",
+        items: [
+            { name: "Python", icon: "/icons/Python.svg" },
+            { name: "Pandas", icon: "/icons/Pandas.svg" },
+            { name: "NumPy", icon: "/icons/NumPy.svg" },
+            { name: "Matplotlib", icon: "/icons/Matplotlib.svg" },
+            { name: "Anaconda", icon: "/icons/Anaconda.svg" }
+        ]
+    },
+    {
+        name: "Embedded & Low-level",
+        items: [
+            { name: "Arduino", icon: "/icons/Arduino.svg" },
+            { name: "C", icon: "/icons/C.svg" },
+            { name: "C++", icon: "/icons/CPP.svg" }
+        ]
+    },
+    {
+        name: "Tools & Workflow",
+        items: [
+            { name: "VS Code", icon: "/icons/VS Code.svg" },
+            { name: "Git", icon: "/icons/Git.svg" },
+            { name: "GitHub", icon: "/icons/GitHub.svg" },
+            { name: "NPM", icon: "/icons/NPM.svg" },
+            { name: "Postman", icon: "/icons/Postman.svg" }
+        ]
+    }
 ]
+
+// Flat list of all skills (used for counts)
+export const skills = skillCategories.flatMap((category) => category.items)
 
 export const experiences = [
     {

@@ -27,7 +27,7 @@ const About = () => {
         A little about who I am and what I do
       </p>
 
-      <div className="grid lg:grid-cols-[auto_1fr] gap-x-20 gap-y-10 mt-12">
+      <div className="grid lg:grid-cols-[auto_1fr] gap-12 lg:gap-20 mt-12">
         {/* Portrait: stretches to match the bio-to-socials block on desktop */}
         <div className="relative w-64 sm:w-80 mx-auto lg:mx-0">
           <Image
@@ -56,7 +56,7 @@ const About = () => {
           </div>
 
           {/* Highlight cards */}
-          <ul className="grid grid-cols-3 gap-4 max-w-2xl mx-auto lg:mx-0 mt-10">
+          <ul className="grid grid-cols-3 gap-4 max-w-2xl mx-auto lg:mx-0 mt-8">
             {highlights.map(({ label, value, Icon }) => (
               <li
                 key={label}
@@ -73,19 +73,19 @@ const About = () => {
             ))}
           </ul>
 
-          {/* Socials */}
-          <p className="mt-10 mb-4 text-lg font-Ovo font-bold">Follow me:</p>
-          <SocialLinks size={28} className="justify-center lg:justify-start" />
-        </div>
-
-        {/* Actions */}
-        <div className="lg:col-span-2 flex justify-center">
-          <a
-            href="#contact"
-            className="px-10 py-3 border rounded-full border-white bg-black text-white flex items-center gap-2 hover:bg-rose-500 transition"
-          >
-            Hire me <IoBriefcaseOutline aria-hidden="true" />
-          </a>
+          {/* Footer row: socials + call to action */}
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-6 border-t border-gray-200 pt-6 mt-8 max-w-2xl mx-auto lg:mx-0">
+            <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-4">
+              <p className="text-lg font-Ovo font-bold">Follow me:</p>
+              <SocialLinks size={28} />
+            </div>
+            <a
+              href="#contact"
+              className="px-10 py-3 border rounded-full border-white bg-black text-white flex items-center gap-2 hover:bg-rose-500 transition"
+            >
+              Hire me <IoBriefcaseOutline aria-hidden="true" />
+            </a>
+          </div>
         </div>
       </div>
     </section>
