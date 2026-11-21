@@ -247,6 +247,18 @@ export const serviceData = [
 
 export const works = [
     {
+        title: 'WorkLog',
+        subtitle: 'Web Application',
+        image: '/Projects/WorkLog.png',
+        link: 'https://worklog-bd.vercel.app/',
+    },
+    {
+        title: 'Farasha Digital',
+        subtitle: 'Web Site',
+        image: '/Projects/FarashaDigital.png',
+        link: 'https://farasha-digital.vercel.app/',
+    },
+    {
         title: 'Culinary Odyssey',
         subtitle: 'Web Application',
         image: '/Projects/Culinary Odyssey.png',
@@ -255,20 +267,20 @@ export const works = [
     {
         title: 'Virtual Bookshelf',
         subtitle: 'Web Application',
-        image: '/Projects/Virtual Bookshelf.png',
-        link: '#',
+        image: '/Projects/VirtualBookshelf.png',
+        link: 'https://tanzim-s-virtual-bookshelf.onrender.com/',
     },
     {
         title: 'Portfolio Website',
         subtitle: 'Web Site',
         image: '/Projects/Portfolio Website.png',
-        link: '#',
+        link: 'https://tanzim-ikram.github.io/portfolio-website-1/',
     },
     {
         title: 'Casa Di Pasta',
         subtitle: 'Web Site',
         image: '/Projects/Casa Di Pasta.png',
-        link: '#',
+        link: 'https://tanzim-ikram.github.io/casa-di-pasta/',
     },
     {
         title: 'FundMe',
@@ -295,21 +307,21 @@ export const works = [
         link: 'https://www.figma.com/design/BP8lBTqTDgmqjTvr4fvms1/Dhaka-Metro?node-id=0-1&t=EelkiiOyyxCaBID7-1',
     },
     {
-        title: 'Messenger App',
+        title: 'Messenger App UI Clone',
         subtitle: 'UI/UX Design',
         image: '/Projects/Messenger App.png',
-        link: 'https://www.figma.com/design/DcbuFoUEfXjH1Lnl9ebMf0/Messenger-App?node-id=14-186&t=Wq85HwUEpAWZJvS8-1',
+        link: 'https://www.behance.net/gallery/237997725/Messenger-App-UI-Clone',
     },
     {
-        title: 'Coffee App',
+        title: 'Kofeé – The App',
         subtitle: 'UI/UX Design',
         image: '/Projects/Coffee App.png',
-        link: 'https://www.figma.com/design/dXWtQQWkbwjZZuQhCa0RT4/Coffee-App?node-id=0-1&t=6GdSdMvLCtUrLNzK-1',
+        link: 'https://www.behance.net/gallery/237540079/Kofe-The-App',
     },
     {
-        title: 'Music App',
+        title: 'Neumorphic Music Player',
         subtitle: 'UI/UX Design',
         image: '/Projects/Music App.png',
-        link: 'https://www.figma.com/design/4FO8yzqIPQzwK5SHPqlXs6/Neumorphism?node-id=0-1&t=zxp57D2cmfJLh6Ud-1',
+        link: 'https://www.behance.net/gallery/238620239/Neumorphic-Music-Player-UI-Design',
     },
 ]

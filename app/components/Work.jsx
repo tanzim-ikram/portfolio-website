@@ -9,9 +9,9 @@ import { works } from "@/assets/assets";
 const INITIAL_COUNT = 8;
 const categories = [
   { value: "All", label: "All" },
+  { value: "UI/UX Design", label: "UI/UX" },
   { value: "Web Application", label: "Web App" },
   { value: "Web Site", label: "Web Site" },
-  { value: "UI/UX Design", label: "UI/UX" },
 ];
 
 const Work = () => {
