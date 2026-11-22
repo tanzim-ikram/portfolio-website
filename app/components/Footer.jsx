@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import { MdEmail } from "react-icons/md";
 import { assets } from '@/assets/assets';
 import SocialLinks from './SocialLinks';
 
@@ -10,16 +9,8 @@ const Footer = () => {
                 {/* Logo Section */}
                 <Image src={assets.logo} alt="Tanzim Ikram Sheikh" width={150} height={150} />
 
-                {/* Email Section */}
+                {/* Social Links */}
                 <div className="flex flex-col items-center gap-2 text-lg text-gray-600">
-                    {/* Email Address */}
-                    <div className="flex flex-row items-center gap-2 mb-2">
-                        <MdEmail className='text-rose-500' />
-                        <a href="mailto:tanzim.ikram@protonmail.com" className="hover:underline">
-                            tanzim.ikram@protonmail.com
-                        </a>
-                    </div>
-
                     <SocialLinks size={24} className="mb-10" />
                 </div>
 

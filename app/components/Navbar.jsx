@@ -48,7 +48,7 @@ const Navbar = () => {
             <nav className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50 transition-all duration-300 ${isScrolled ? "bg-white/50 backdrop-blur-lg shadow-sm" : ""}`}>
                 {/* Logo */}
                 <a href="#top">
-                    <Image src={assets.logo} alt="Tanzim Ikram Sheikh" className='w-30 mr-14' />
+                    <Image src={assets.logo} alt="Tanzim Ikram Sheikh" className='w-30 h-auto mr-14' />
                 </a>
 
                 {/* Desktop navigation links */}
