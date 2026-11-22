@@ -254,7 +254,7 @@ export const works = [
     },
     {
         title: 'Farasha Digital',
-        subtitle: 'Web Site',
+        subtitle: 'Website',
         image: '/Projects/FarashaDigital.png',
         link: 'https://farasha-digital.vercel.app/',
     },
@@ -272,13 +272,13 @@ export const works = [
     },
     {
         title: 'Portfolio Website',
-        subtitle: 'Web Site',
+        subtitle: 'Website',
         image: '/Projects/Portfolio Website.png',
         link: 'https://tanzim-ikram.github.io/portfolio-website-1/',
     },
     {
         title: 'Casa Di Pasta',
-        subtitle: 'Web Site',
+        subtitle: 'Website',
         image: '/Projects/Casa Di Pasta.png',
         link: 'https://tanzim-ikram.github.io/casa-di-pasta/',
     },
@@ -309,19 +309,55 @@ export const works = [
     {
         title: 'Messenger App UI Clone',
         subtitle: 'UI/UX Design',
-        image: '/Projects/Messenger App.png',
+        image: '/Projects/MessengerApp.png',
         link: 'https://www.behance.net/gallery/237997725/Messenger-App-UI-Clone',
     },
     {
         title: 'Kofeé – The App',
         subtitle: 'UI/UX Design',
-        image: '/Projects/Coffee App.png',
+        image: '/Projects/Koffe.png',
         link: 'https://www.behance.net/gallery/237540079/Kofe-The-App',
     },
     {
         title: 'Neumorphic Music Player',
         subtitle: 'UI/UX Design',
-        image: '/Projects/Music App.png',
+        image: '/Projects/MusicPlayer.png',
         link: 'https://www.behance.net/gallery/238620239/Neumorphic-Music-Player-UI-Design',
+    },
+    {
+        title: 'Thunder VPN',
+        subtitle: 'UI/UX Design',
+        image: '/Projects/ThunderVPN.png',
+        link: 'https://www.behance.net/gallery/237675597/Thunder-VPN-Mobile-App-Design',
+    },
+    {
+        title: 'The Bookmark',
+        subtitle: 'UI/UX Design',
+        image: '/Projects/BookMark.png',
+        link: 'https://www.behance.net/gallery/238761399/The-Bookmark-Landing-Page-Design',
+    },
+    {
+        title: 'NCC Always App Redesign',
+        subtitle: 'UI/UX Design',
+        image: '/Projects/NCCAlways.png',
+        link: 'https://www.behance.net/gallery/238256109/NCC-Always-App-Redesign',
+    },
+    {
+        title: 'NID Wallet App',
+        subtitle: 'UX Case Study',
+        image: '/Projects/UXCaseStudy-1.png',
+        link: 'https://www.behance.net/gallery/238135917/NID-Wallet-App-UIUX-Case-Study',
+    },
+    {
+        title: 'Namjari App',
+        subtitle: 'UX Case Study',
+        image: '/Projects/UXCaseStudy-2.png',
+        link: 'https://www.behance.net/gallery/238353931/Namjari-App-UIUX-Case-Study',
+    },
+    {
+        title: 'Envolead Website',
+        subtitle: 'Website',
+        image: '/Projects/Envolead.png',
+        link: 'https://www.envolead.com/',
     },
 ]

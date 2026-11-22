@@ -11,7 +11,8 @@ const categories = [
   { value: "All", label: "All" },
   { value: "UI/UX Design", label: "UI/UX" },
   { value: "Web Application", label: "Web App" },
-  { value: "Web Site", label: "Web Site" },
+  { value: "Website", label: "Website" },
+  { value: "UX Case Study", label: "UX Case Study" },
 ];
 
 const Work = () => {
