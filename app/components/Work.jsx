@@ -4,7 +4,10 @@ import { useState } from "react";
 import Image from "next/image";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import { MdOutlineArrowOutward } from "react-icons/md";
-import { works } from "@/assets/assets";
+import { works as allWorks } from "@/assets/assets";
+
+// `works` is listed oldest to newest, so reverse it to show the latest first.
+const works = [...allWorks].reverse();
 
 const INITIAL_COUNT = 8;
 const categories = [
